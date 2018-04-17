@@ -140,7 +140,7 @@ internal class Google_Assistant_Embedded_V1Alpha2_EmbeddedAssistantService {
   }
 
   /// Create a client that makes secure connections.
-  internal init(address: String, certificates: String?, host: String?) {
+  internal init(address: String, certificates: String!, host: String?) {
     gRPC.initialize()
     channel = Channel(address:address, certificates:certificates, host:host)
     metadata = Metadata()

@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (4.5.1)
-  - AudioKit (4.0.4):
-    - AudioKit/UI (= 4.0.4)
-  - AudioKit/UI (4.0.4)
+  - AudioKit (4.2.3):
+    - AudioKit/UI (= 4.2.3)
+  - AudioKit/UI (4.2.3)
   - KeyHolder (2.0.1):
     - Magnet (~> 2.0)
   - Log (1.0)
@@ -21,7 +21,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  AudioKit: 647145c0462dc9dc8a8582998cd6db5f2e1ea848
+  AudioKit: 65e0035ce267446932ac733257053ac97dfe395e
   KeyHolder: 33180865d66f40088758915f30ba7017e96ca264
   Log: 5e368c9528db07517d18d2d04ff5fe2b6f5a1e21
   Magnet: d4a1767953d02c2141f5b572ea483244fe0878d5
@@ -30,4 +30,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 0a9d0665f25bf57bee65c5de5ff1927e07abb3b6
 
-COCOAPODS: 1.4.0.beta.2
+COCOAPODS: 1.4.0

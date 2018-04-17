@@ -112,7 +112,7 @@ class AssistantViewController: NSViewController, ConversationTextDelegate, AVAud
     
     func startListening() {
         api.initiateRequest(volumePercent: Int32(mic.volume * 100))
-        AudioKit.start()
+        try! AudioKit.start()
         player = try? AVAudioPlayer(contentsOf: prompt_file)
         player?.play()
         DispatchQueue.main.async {
@@ -125,7 +125,7 @@ class AssistantViewController: NSViewController, ConversationTextDelegate, AVAud
     }
     
     func stopListening() {
-        AudioKit.stop()
+        try! AudioKit.stop()
         api.doneSpeaking()
         DispatchQueue.main.async {
             self.microphoneButton.isHidden = false
