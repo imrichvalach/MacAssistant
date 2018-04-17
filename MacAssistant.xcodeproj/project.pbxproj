@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3778F10A20868D3A00500140 /* gRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9379461FC2702F00C9B2E8 /* gRPC.framework */; };
+		3778F10B20868D3A00500140 /* gRPC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF9379461FC2702F00C9B2E8 /* gRPC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3778F10E20868D3B00500140 /* CgRPC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF9379481FC2702F00C9B2E8 /* CgRPC.framework */; };
+		3778F10F20868D3B00500140 /* CgRPC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF9379481FC2702F00C9B2E8 /* CgRPC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3778F11220868D3B00500140 /* Czlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF93794E1FC2702F00C9B2E8 /* Czlib.framework */; };
+		3778F11320868D3B00500140 /* Czlib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF93794E1FC2702F00C9B2E8 /* Czlib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3778F11620868D3B00500140 /* BoringSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF93794A1FC2702F00C9B2E8 /* BoringSSL.framework */; };
+		3778F11720868D3B00500140 /* BoringSSL.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF93794A1FC2702F00C9B2E8 /* BoringSSL.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DBC4E10926A3D8EC97BE26F /* Pods_MacAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA5173A459BC47FAEEC7E61B /* Pods_MacAssistant.framework */; };
 		FF2652021EC93DEE00ACDBB5 /* begin_prompt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FF2652011EC93DEE00ACDBB5 /* begin_prompt.mp3 */; };
 		FF41AB861EB416F4003E994B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF41AB851EB416F4003E994B /* API.swift */; };
@@ -42,6 +50,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3778F10820868D1500500140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF9379361FC2702F00C9B2E8 /* SwiftGRPC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = "SwiftGRPC::RootsEncoder::Product";
+			remoteInfo = RootsEncoder;
+		};
+		3778F10C20868D3A00500140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF9379361FC2702F00C9B2E8 /* SwiftGRPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftGRPC::gRPC";
+			remoteInfo = gRPC;
+		};
+		3778F11020868D3B00500140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF9379361FC2702F00C9B2E8 /* SwiftGRPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftGRPC::CgRPC";
+			remoteInfo = CgRPC;
+		};
+		3778F11420868D3B00500140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF9379361FC2702F00C9B2E8 /* SwiftGRPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "zlib::Czlib";
+			remoteInfo = Czlib;
+		};
+		3778F11820868D3B00500140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF9379361FC2702F00C9B2E8 /* SwiftGRPC.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = "SwiftGRPC::BoringSSL";
+			remoteInfo = BoringSSL;
+		};
 		FF9379431FC2702F00C9B2E8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = FF9379361FC2702F00C9B2E8 /* SwiftGRPC.xcodeproj */;
@@ -115,6 +158,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		3778F11A20868D3B00500140 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3778F11320868D3B00500140 /* Czlib.framework in Embed Frameworks */,
+				3778F10F20868D3B00500140 /* CgRPC.framework in Embed Frameworks */,
+				3778F11720868D3B00500140 /* BoringSSL.framework in Embed Frameworks */,
+				3778F10B20868D3A00500140 /* gRPC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFA470AE1EB2B62700A5F89A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -168,9 +225,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3778F10E20868D3B00500140 /* CgRPC.framework in Frameworks */,
 				FF9379551FC270A500C9B2E8 /* BoringSSL.framework in Frameworks */,
+				3778F11620868D3B00500140 /* BoringSSL.framework in Frameworks */,
 				FF9379521FC2706900C9B2E8 /* CgRPC.framework in Frameworks */,
+				3778F10A20868D3A00500140 /* gRPC.framework in Frameworks */,
 				FF9379511FC2704600C9B2E8 /* gRPC.framework in Frameworks */,
+				3778F11220868D3B00500140 /* Czlib.framework in Frameworks */,
 				6DBC4E10926A3D8EC97BE26F /* Pods_MacAssistant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,12 +260,13 @@
 		FF9379371FC2702F00C9B2E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF9379441FC2702F00C9B2E8 /* gRPCTests.xctest */,
-				FF9379461FC2702F00C9B2E8 /* gRPC.framework */,
-				FF9379481FC2702F00C9B2E8 /* CgRPC.framework */,
 				FF93794A1FC2702F00C9B2E8 /* BoringSSL.framework */,
-				FF93794C1FC2702F00C9B2E8 /* zlib-example */,
+				FF9379481FC2702F00C9B2E8 /* CgRPC.framework */,
 				FF93794E1FC2702F00C9B2E8 /* Czlib.framework */,
+				3778F10920868D1500500140 /* RootsEncoder */,
+				FF9379461FC2702F00C9B2E8 /* gRPC.framework */,
+				FF9379441FC2702F00C9B2E8 /* gRPCTests.xctest */,
+				FF93794C1FC2702F00C9B2E8 /* zlib-example */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -350,6 +412,7 @@
 				FFA470AE1EB2B62700A5F89A /* CopyFiles */,
 				908046311041C2075397C0BA /* [CP] Embed Pods Frameworks */,
 				E557FE48ED3AE7754B9A1E84 /* [CP] Copy Pods Resources */,
+				3778F11A20868D3B00500140 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,6 +421,10 @@
 				FF93796C1FC2798E00C9B2E8 /* PBXTargetDependency */,
 				FF93796E1FC2798E00C9B2E8 /* PBXTargetDependency */,
 				FF9379701FC2798E00C9B2E8 /* PBXTargetDependency */,
+				3778F10D20868D3A00500140 /* PBXTargetDependency */,
+				3778F11120868D3B00500140 /* PBXTargetDependency */,
+				3778F11520868D3B00500140 /* PBXTargetDependency */,
+				3778F11920868D3B00500140 /* PBXTargetDependency */,
 			);
 			name = MacAssistant;
 			productName = MacAssistant;
@@ -376,9 +443,8 @@
 				TargetAttributes = {
 					FFE68A6F1EB2A81E00F60EF5 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = DU7NX744DX;
 						LastSwiftMigration = 0910;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -407,6 +473,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		3778F10920868D1500500140 /* RootsEncoder */ = {
+			isa = PBXReferenceProxy;
+			fileType = text;
+			path = RootsEncoder;
+			remoteRef = 3778F10820868D1500500140 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		FF9379441FC2702F00C9B2E8 /* gRPCTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = file;
@@ -437,7 +510,7 @@
 		};
 		FF93794C1FC2702F00C9B2E8 /* zlib-example */ = {
 			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.executable";
+			fileType = text;
 			path = "zlib-example";
 			remoteRef = FF93794B1FC2702F00C9B2E8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -568,6 +641,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3778F10D20868D3A00500140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gRPC;
+			targetProxy = 3778F10C20868D3A00500140 /* PBXContainerItemProxy */;
+		};
+		3778F11120868D3B00500140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CgRPC;
+			targetProxy = 3778F11020868D3B00500140 /* PBXContainerItemProxy */;
+		};
+		3778F11520868D3B00500140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Czlib;
+			targetProxy = 3778F11420868D3B00500140 /* PBXContainerItemProxy */;
+		};
+		3778F11920868D3B00500140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BoringSSL;
+			targetProxy = 3778F11820868D3B00500140 /* PBXContainerItemProxy */;
+		};
 		FF93796A1FC2798E00C9B2E8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = gRPC;
@@ -721,10 +814,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 416FFB1DA0770C90826554EA /* Pods-MacAssistant.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = DU7NX744DX;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/grpc-swift/build/Debug",
@@ -746,10 +841,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6BC614CFFB22F0565D5D55D2 /* Pods-MacAssistant.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = DU7NX744DX;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/grpc-swift/build/Debug",
